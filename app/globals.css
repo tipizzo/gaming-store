@@ -8,3 +8,9 @@ body {
   color: white;
   font-family: "Rajdhani", sans-serif;
 }
+
+@layer utilities {
+  .bg-custom-gradient {
+    background: linear-gradient(135deg, #09071d, #06041c, #00003d);
+  }
+}

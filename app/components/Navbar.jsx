@@ -11,10 +11,10 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className='my-6 mx-8'>
+            <nav className='my-8 mx-6 lg:mx-12'>
                 {/* Mobile Navbar */}
                 <div className='lg:hidden flex justify-between items-center'>
-                    <div className='flex items-center gap-3'>
+                    <div className='flex items-center gap-2'>
                         <div className='flex items-center gap-1'>
                             <h1 className='font-semibold text-lg'>KGStore</h1>
                             <ChevronDownIcon className='size-3' />
@@ -38,6 +38,29 @@ const Navbar = () => {
 
 
                 {/* Desktop Navbar */}
+
+                <div className='hidden lg:flex justify-between items-center'>
+                    <div className='flex items-center gap-5'>
+                        <div className='flex items-center gap-1'>
+                            <h1 className='font-semibold text-lg'>KGStore</h1>
+                            <ChevronDownIcon className='size-3' />
+                        </div>
+                        <div>
+                            <h3 className='font-bold text-2xl hover:text-gray-300 transition-all duration-300 cursor-pointer'>Explore</h3>
+                        </div>
+                        <ul className='flex gap-4'>
+                            <li className='text-slate-50 font-medium text-lg'><Link href="">Products</Link></li>
+                            <li className='text-slate-50 font-medium text-lg'><Link href="">Support</Link></li>
+                            <li className='text-slate-50 font-medium text-lg'><Link href="">Distribute</Link></li>
+                            <li className='text-slate-50 font-medium text-lg'><Link href="">Buy me a Coffee</Link></li>
+                        </ul>
+                    </div>
+                    <div className='flex gap-5'>
+                        <button className='bg-blue-300 text-black font-semibold p-1 rounded-md cursor-pointer hover:bg-blue-400 transition-all duration-300'>Download</button>
+                        <button className='border-2 border-blue-300 font-semibold py-1 px-3 rounded-md cursor-pointer'>Sign In</button>
+                        <button><GlobeAltIcon className='w-7 h-7' /></button>
+                    </div>
+                </div>
             </nav>
             {/* Mobile Menu bar */}
             {openMenu && (
