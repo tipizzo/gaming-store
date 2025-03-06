@@ -12,7 +12,7 @@ const SearchSection = () => {
     return (
         <>
             {/* Mobile Version */}
-            <div className='lg:hidden flex my-10 mx-32'>
+            <div className='lg:hidden flex my-10 '>
                 <button onClick={() => setOpenSearchBar(!openSearchBar)} className='pl-10 cursor-pointer'>
                     {openSearchBar ? (
                         <XMarkIcon className='w-5 h-5' />
@@ -30,14 +30,14 @@ const SearchSection = () => {
 
             {/* Open the search bar */}
             {openSearchBar && (
-                <div className='mx-20'>
+                <div className='mx-6 py-5'>
                     <input type='search' placeholder='search Store' className='bg-gray-800 text-slate-50 font-light p-5 w-full rounded-2xl' />
                 </div>
             )}
 
             {/* Open Discover Menu */}
             {openDiscover && (
-                <div className='flex flex-col bg-gray-900 py-5 my-5 text-center align-center gap-3 rounded-md z-50'>
+                <div className='flex flex-col bg-gray-900 py-5 my-6 text-center align-center gap-3 rounded-md z-50'>
                     <h1 className='font-bold'>Discover</h1>
                     <Link href="" className='text-white cursor-pointer'>Browse</Link>
                     <Link href="" className='text-white cursor-pointer'>News</Link>
