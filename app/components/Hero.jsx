@@ -58,7 +58,7 @@ const Hero = () => {
 
             {/* Desktop Version */}
 
-            <div className='hidden lg:flex gap-5 ml-44 mt-10'>
+            <div className='hidden lg:flex mx-44 mt-10'>
                 <Swiper
                     spaceBetween={50}
                     effect={'fade'}
@@ -92,7 +92,7 @@ const Hero = () => {
                     
                 </Swiper>
 
-                <div className='flex flex-col justify-start w-full  mr-26'>
+                <div className='flex flex-col w-full'>
                     <h1 className='font-bold text-3xl'>Gaming News</h1>
                 </div>
             </div>
