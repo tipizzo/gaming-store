@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
 import games from '@/lib/GamesData';
 
-const GameCard = ({ title = "Discover Something New" }) => {
+const GameCard = ({ title }) => {
     const cardsRef = useRef(null);
 
     const scrollLeft = () => {
