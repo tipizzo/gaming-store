@@ -19,7 +19,6 @@ body {
 @layer utilities {
   .game-card {
     overflow-x: auto; /* Enable horizontal scrolling */
-    white-space: nowrap; /* Prevent wrapping */
   }
   
   .game-card::-webkit-scrollbar {
