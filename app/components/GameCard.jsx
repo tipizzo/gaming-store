@@ -10,23 +10,23 @@ const GameCard = ({ title = "Discover Something New" }) => {
 
     const scrollLeft = () => {
         if (cardsRef.current) {
-            cardsRef.current.scrollLeft -= 300;
+            cardsRef.current.scrollLeft -= 500;
         }
     };
 
     const scrollRight = () => {
         if (cardsRef.current) {
-            cardsRef.current.scrollLeft += 300;
+            cardsRef.current.scrollLeft += 500;
         }
     }
 
     return (
-        <div className='title-cards mx-44 mt-10'>
+        <div className='title-cards mx-6 lg:mx-44 mt-10'>
             <div className='flex justify-between'>
-                <h2 className='flex items-center gap-2 font-bold text-2xl'>
-                    {title} <ChevronRightIcon className='h-7 w-7' />
+                <h2 className='flex items-center gap-1 md:gap-2 font-bold text-xl md:text-2xl'>
+                    {title} <ChevronRightIcon className='h-5 w-5 md:h-7 md:w-7' />
                 </h2>
-                <div className='flex items-center gap-5'>
+                <div className='hidden lg:flex items-center gap-5'>
                     <button onClick={scrollLeft} className='border rounded-full p-1 hover:bg-blue-950 text-white cursor-pointer transition-all duration-300'>
                         <ChevronLeftIcon className='h-4 w-4 text-white' />
                     </button>

@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth; /* This enables smooth scrolling on the entire page */
+}
 
 body {
   background: linear-gradient(135deg, #050329, #030214, #00001f);
