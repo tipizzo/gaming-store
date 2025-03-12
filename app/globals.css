@@ -17,10 +17,11 @@ body {
 }
 
 @layer utilities {
+
   .game-card {
-    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap;
   }
-  
+
   .game-card::-webkit-scrollbar {
     display: none; /* Hide scrollbar */
   }
