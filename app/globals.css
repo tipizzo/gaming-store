@@ -15,3 +15,14 @@ body {
     background: linear-gradient(135deg, #070333, #06041c, #00003d);
   }
 }
+
+@layer utilities {
+  .game-card {
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+  }
+  
+  .game-card::-webkit-scrollbar {
+    display: none; /* Hide scrollbar */
+  }
+}
