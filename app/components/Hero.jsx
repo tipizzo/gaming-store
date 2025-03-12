@@ -18,7 +18,7 @@ const Hero = () => {
         <div>
 
             {/* Mobile Version */}
-            <div className='lg:hidden mx-6'>
+            <div className='lg:hidden mx-3'>
                 <Swiper
                     spaceBetween={50}
                     effect={'fade'}

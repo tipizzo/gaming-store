@@ -21,7 +21,7 @@ const GameCard = ({ title }) => {
     }
 
     return (
-        <div className='title-cards mx-6 lg:mx-44 mt-10'>
+        <div className='title-cards mx-3 lg:mx-44 mt-10'>
             <div className='flex justify-between'>
                 <h2 className='flex items-center gap-1 md:gap-2 font-bold text-xl md:text-2xl'>
                     {title} <ChevronRightIcon className='h-5 w-5 md:h-7 md:w-7' />
