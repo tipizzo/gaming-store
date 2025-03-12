@@ -89,12 +89,7 @@ const Hero = () => {
                         </div>
                     </SwiperSlide>
                     ))}
-                    
                 </Swiper>
-
-                <div className='flex flex-col w-full'>
-                    <h1 className='font-bold text-3xl'>Gaming News</h1>
-                </div>
             </div>
         </div>
     );

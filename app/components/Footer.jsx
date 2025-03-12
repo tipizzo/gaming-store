@@ -15,7 +15,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Footer = () => {
   return (
     <div className='mt-12 px-15 py-10 bg-gray-900'>
-        <div className='flex justify-between'>
+        <div className='flex items-center justify-between'>
             <div className='flex gap-5'>
                 <FaFacebook className='h-8 w-8 hover:text-gray-400 transition-all duration-300 cursor-pointer' />
                 <FaXTwitter className='h-8 w-8 hover:text-gray-400 transition-all duration-300 cursor-pointer'  />
