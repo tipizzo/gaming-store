@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-col gap-2 mt-10'>
             <h3 className='font-bold text-gray-400'>Resources</h3>
-            <div className='grid grid-cols-3 w-max gap-x-12'>
+            <div className='flex flex-col md:grid grid-cols-3 w-max gap-x-12'>
                 <Link href="" className='font-semibold hover:text-gray-500 cursor-pointer transition-all duration-300'>Support-A-Creator</Link>
                 <Link href="" className='font-semibold hover:text-gray-500 cursor-pointer transition-all duration-300'>Distribute on KG</Link>
                 <Link href="" className='font-semibold hover:text-gray-500 cursor-pointer transition-all duration-300'>Careers</Link>
@@ -42,7 +42,7 @@ const Footer = () => {
         </div>
 
         <hr className='text-gray-700 text-sm my-10' />
-        <div className='flex flex-col w-1/2'>
+        <div className='flex flex-col md:w-1/2'>
             <p className='text-sm font-bold'>
             &copy; {new Date().getFullYear()}, KG Store for <TypeAnimation
                 sequence={[

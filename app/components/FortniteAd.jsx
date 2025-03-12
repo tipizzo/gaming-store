@@ -5,7 +5,7 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/outline'
 const FortniteAd = () => {
     return (
         <div className='mt-10 mx-10 lg:mx-44'>
-            <div className='flex flex-col lg:flex-row justify-around gap-2'>
+            <div className='flex flex-col lg:flex-row justify-around gap-2 sm:gap-4'>
                 <div className='flex flex-col gap-3'>
                     <img className='h-[300px] md:w-[300px] lg:w-[600px] rounded-lg' src='/assets/fortnite_lego.png' />
                     <h3 className='text-xl font-bold'>Fortnite Lego</h3>
