@@ -16,7 +16,9 @@ const Navbar = () => {
                 <div className='lg:hidden flex justify-between items-center'>
                     <div className='flex items-center gap-2'>
                         <div className='flex items-center gap-1'>
-                            <h1 className='font-semibold text-lg'>KGStore</h1>
+                            <button>
+                                <Link href="/">KIVU GAMING</Link>
+                            </button>
                             <ChevronDownIcon className='size-3' />
                         </div>
                         <div>
@@ -42,11 +44,11 @@ const Navbar = () => {
                 <div className='hidden lg:flex justify-between items-center'>
                     <div className='flex items-center gap-5'>
                         <div className='flex items-center gap-1'>
-                            <h1 className='font-semibold text-lg'>KGStore</h1>
+                            <h1 className='font-semibold text-lg cursor-pointer'><Link href="/">KIVU GAMING</Link></h1>
                             <ChevronDownIcon className='size-3' />
                         </div>
                         <div>
-                            <h3 className='font-bold text-2xl hover:text-gray-300 transition-all duration-300 cursor-pointer'>Explore</h3>
+                            <h3 className='font-bold text-2xl hover:text-gray-300 transition-all duration-300 cursor-pointer'><Link href="/games">Explore</Link></h3>
                         </div>
                         <ul className='flex gap-4'>
                             <li className='text-slate-50 font-medium text-lg'><Link href="">Products</Link></li>
