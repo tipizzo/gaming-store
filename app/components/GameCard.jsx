@@ -3,9 +3,9 @@
 import React, { useEffect, useRef } from 'react';
 import Link from 'next/link';
 import { ChevronRightIcon, ChevronLeftIcon } from '@heroicons/react/24/outline';
-import gamesData from '@/lib/GamesData';
+import games from '@/lib/GamesData';
 
-const GameCard = ({ title, gamesData }) => {
+const GameCard = ({ title }) => {
     const cardsRef = useRef(null);
 
     const scrollLeft = () => {
@@ -40,8 +40,8 @@ const GameCard = ({ title, gamesData }) => {
                 className='card-list flex gap-12 mt-8 overflow-x-auto flex-nowrap game-card'
                 style={{ scrollBehavior: 'smooth', paddingBottom: '10px' }}
             >
-                {gamesData.map((item, index) => (
-                    <div key={index} className='card flex flex-col gap-4 cursor-pointer game-card' style={{ minWidth: '220px' }}>
+                {games.map((item) => (
+                    <div key={item.id} className='card flex flex-col gap-4 cursor-pointer game-card' style={{ minWidth: '220px' }}>
                         <Link href={`/games/${item.id}`} className='flex flex-col'>
                             <img src={item.image} alt={item.title} className='h-[300px] w-[200px] rounded-lg mb-2' />
                             <span className='text-gray-400 font-bold text-sm px-1 rounded-xl'>{item.category}</span>
